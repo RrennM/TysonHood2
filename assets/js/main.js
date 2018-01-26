@@ -43,7 +43,8 @@ $(document).ready(function() {
 
         // Animates the navbar
         $('#navbar').stop().animate({
-          height:'80px'
+          height:'80px',
+          borderRadius:'0'
         }, 200);
         
         // Animates the logo

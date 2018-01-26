@@ -79,9 +79,86 @@ blockquote cite {
 	background-color: #1F3C53;
 }
 
+.alt-page .navbar {
+	background: rgba(0,0,0,0.9);
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	border-radius: 0;
+}
+
+.alt-page #brand-logo {
+	height: 250%;
+}
+
+.alt-page #nav-links {
+	height: 80px;
+}
+
+.alt-page #nav-links li {
+	height: 80px;
+}
+
+.alt-page #nav-links li a {
+	line-height: 50px;
+}
+
+.alt-page #nav-links li.active a {
+	background-color: #000; 
+	height: 79px;
+}
+
 .title {
 	text-align: center;
 	width: 90%;
+}
+
+.feature-image {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.feature-image-default {
+	background: url('../img/hagg-lake.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
+.feature-image-default {
+	background: url(../img/crater-lake.jpg) 50% 0 no-repeat fixed;
+	background-size: auto;
+}
+
+.feature-image .page-title {
+	display: flex;
+	margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-image h1 {
+  justify-content: center;
+  flex-direction: column;
+	display: flex;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.6);
+	font-weight: 700;
+	height: 100px;
+}
+
+.social i {
+	margin-right: 10px;
+	background: #222;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 1.4em;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
 }
 
 
@@ -92,7 +169,7 @@ header {
 	font-size: 1.25em;
 }
 
-#hero {
+#homepage #hero {
 	background: url('../img/hero-bkgd.jpg') 50% 0 repeat fixed;
 	background-size: cover;
 	min-height: 700px;
@@ -186,19 +263,7 @@ header {
 	font-weight: 700;
 }
 
-#about i {
-	background: #222;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	color: #fff;
-	font-size: 1.4em;
-	height: 40px;
-	line-height: 40px;
-	margin-right: 10px;
-	text-align: center;
-	width: 40px;
-}
+
 
 
 
@@ -246,25 +311,25 @@ header {
 
 
 
-/* === CONTACT
+/* === MOREINFO
 =============================================================*/
-#contact {
-	background: url('../img/hipster-stuff.jpg') 50% 50% repeat fixed;
+#moreinfo {
+	background: url('../img/hipster-coffee.jpg') 0 50% repeat fixed;
 	background-size: cover;
 	font-size: 1em;
-	height: 600px;
+	height: 400px;
 }
 
-#contact .container .row .col-sm-6 {
-	background: rgba(255,255,255, 0.9);
+#moreinfo .container .row .col-sm-6 {
+	background: #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin-top: 100px;
+	margin-top: 40px;
 	text-align: center;
 }
 
-#contact .container .row .col-sm-6 h2 {
+#moreinfo .container .row .col-sm-6 h2 {
 	font-weight: 700;
 }
 
@@ -312,3 +377,46 @@ footer a:hover {
 .modal {
 	margin-top: 60px;
 }
+
+
+
+/* === CONTACT PAGE
+=============================================================*/
+#contact-page #hero {
+	min-height: 400px;
+	background-size: cover;
+	display: flex;
+}
+
+/* === CONTACT: NAV
+=============================================================*/
+
+/* === CONTACT: INFO SECTION
+=============================================================*/
+#contact {
+	padding: 40px 0;
+}
+
+.contact-info {
+ text-align: center;
+ padding: 40px 0;
+}
+
+.contact-info div	{
+	border-right: 1px solid #222;
+}
+
+.contact-info div:nth-of-type(1)	{
+	border-right: 1px solid #222;
+	border-left: 1px solid #222;
+}
+
+.contact-info div	{
+	border-right: 1px solid #222;
+}
+
+.contact-form {
+	text-align: center;
+}
+
+
