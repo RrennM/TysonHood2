@@ -79,6 +79,12 @@ blockquote cite {
 	background-color: #1F3C53;
 }
 
+.alt-page #hero {
+	min-height: 400px;
+	background-size: cover;
+	display: flex;
+}
+
 .alt-page .navbar {
 	background: rgba(0,0,0,0.9);
 	height: 80px;
@@ -120,7 +126,7 @@ blockquote cite {
 	justify-content: center;
 }
 
-.feature-image-default {
+.feature-image-default-alt {
 	background: url('../img/hagg-lake.jpg') 50% 0 no-repeat fixed;
 	background-size: cover;
 }
@@ -245,7 +251,7 @@ header {
 
 #about img {
 	margin: 20px auto;
-	max-width: 60%;
+	max-width: 80%;
 }
 
 #about h2 {
@@ -381,17 +387,6 @@ footer a:hover {
 
 
 /* === CONTACT PAGE
-=============================================================*/
-#contact-page #hero {
-	min-height: 400px;
-	background-size: cover;
-	display: flex;
-}
-
-/* === CONTACT: NAV
-=============================================================*/
-
-/* === CONTACT: INFO SECTION
 =============================================================*/
 #contact {
 	padding: 40px 0;
