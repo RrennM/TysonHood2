@@ -111,7 +111,7 @@ blockquote cite {
 }
 
 .alt-page #nav-links li.active a {
-	background-color: #000; 
+	background-color: #222; 
 	height: 79px;
 }
 
@@ -151,6 +151,9 @@ blockquote cite {
 	background: rgba(0, 0, 0, 0.6);
 	font-weight: 700;
 	height: 100px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .social i {
@@ -167,6 +170,14 @@ blockquote cite {
 	width: 40px;
 }
 
+.signature {
+	font-family: 'StayRad', serif;
+	font-size: 72px;
+}
+
+
+/* === HOME PAGE
+=============================================================*/
 
 /* === HEADER
 =============================================================*/
@@ -232,7 +243,9 @@ header {
 
 
 
-/* === ABOUT
+
+
+/* === ABOUT (HOMEPAGE)
 =============================================================*/
 #about {
 	background-color: #fff;
@@ -383,6 +396,83 @@ footer a:hover {
 .modal {
 	margin-top: 60px;
 }
+
+
+
+
+
+/* === ABOUT PAGE
+=============================================================*/
+#my-story {
+	padding: 40px 0;
+}
+
+#my-story .col-sm-7 {
+	border-right: 1px solid #ddd;
+}
+
+.story-image {
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+.story-image img {
+	width: 100%;
+}
+
+.story-image p {
+	font-size: .875em;
+	margin: 10px 0;
+}
+
+
+
+/* === SERVICES PAGE
+=============================================================*/
+#services .description {
+	padding: 20px;
+}
+
+#services .description .button-wrap {
+	text-align: center;
+}
+
+#services .categories {
+	margin: 0 auto 40px;
+	height: auto;
+}
+
+#services .categories .col-sm-4 {
+	height: 100%;
+}
+
+#services .service-wrap-wrap {
+	min-height: 300px;
+	height: auto;
+	background-color: #263B40; 
+	padding: 20px 5px;
+	border: 2px solid #222;
+	margin: 20px 10px;
+}
+
+#services .service-wrap {
+	min-height: 300px;
+	height: auto;
+	background-color: #A09D7D; 
+	padding: 20px 5px;
+	min-width: 90%;
+}
+
+#services .categories h3 {
+	font-weight: 700;
+}
+
+#services .categories h4 {
+	margin: 20px auto 0;
+}
+
+
 
 
 
