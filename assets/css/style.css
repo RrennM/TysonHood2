@@ -241,18 +241,21 @@ header {
 	color: #aaa;
 }
 
+
+
+
+/* === HOMEPAGE HERO SECTION
+=============================================================*/
 #motto {
-	bottom: 25%;
+	bottom: 40%;
 	padding-bottom: 30px;
 	position: absolute;
-	right: 10%;
+	right: 5%;
 }
 
 #motto span {
 	padding-left: 20px;
 }
-
-
 
 
 
@@ -339,6 +342,24 @@ header {
 	padding: 40px 0 80px;
 }
 
+#latest-post #title {
+	color: #222;
+}
+
+#latest-post #title:hover {
+	text-decoration: none;
+	color: #1F3C53;
+}
+
+#latest-post img {
+	max-width: 100%;
+	margin: 0 auto 10px;
+}
+
+#latest-post .btn {
+	width: 140px;
+}
+
 
 
 /* === MOREINFO
@@ -419,6 +440,14 @@ footer a:hover {
 	padding: 40px 0;
 }
 
+#my-story p {
+	font-size: 1.125em;
+}
+
+#my-story p.lead {
+	font-size: 1.25em;
+}
+
 #my-story .col-sm-7 {
 	border-right: 1px solid #ddd;
 }
@@ -433,15 +462,61 @@ footer a:hover {
 	width: 100%;
 }
 
-.story-image p {
-	font-size: .875em;
+.story-image p {	
 	margin: 10px 0;
 }
 
 
 
+/* === PORTFOLIO PAGE
+=============================================================*/
+.portfolio {
+	text-align: center;
+}
+
+.gallery {
+	margin: 0 0 40px;
+	text-align: center;
+}
+
+.gallery .col-sm-4 {
+	margin: 0 auto 40px;
+}
+
+.gallery img {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	min-height: 190px;
+}
+
+
+/* === SHOW PAGE
+=============================================================*/
+#show-page .post header {
+	font-size: 1em;
+}
+
+#show-page .post-body .col-sm-4 {
+	margin: 0 0 20px;
+}
+
+#show-page .post-body .col-sm-4 ul {
+	list-style: none;
+	padding: 0;
+}
+
+#show-page .post-body h3 {
+	clear: both;
+}
+
+
 /* === SERVICES PAGE
 =============================================================*/
+#services {
+	font-size: 1.125em;
+}
+
 #services .description {
 	padding: 20px;
 }
@@ -611,10 +686,10 @@ footer a:hover {
 }
 
 .comment {
-	background-color: rgba(0, 0, 0, 0.03);
+	background-color: rgba(0, 0, 0, 0.02);
 	list-style: none;
 	padding: 10px 20px;
-	border: 1px solid #eee;
+	border: 1px solid rgba(0, 0, 0, 0.03);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -645,6 +720,7 @@ footer a:hover {
 =============================================================*/
 #contact {
 	padding: 40px 0;
+	font-size: 1.125em;
 }
 
 .contact-info {
@@ -729,3 +805,137 @@ button[type="submit"]:hover {
 	border: none;
 	background: #aaa;
 } 
+
+
+
+
+
+/*=== MEDIA QUERIES
+=============================================================*/
+/*=== SMALL DESKTOPS
+=============================================================*/
+@media screen and ( max-width: 991px ) {
+
+	/*Main Nav Fix*/
+	 #navbar .container {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	 #navbar .navbar-brand img {
+		width: 280px;
+	}
+
+	 #hero #motto {
+		bottom: 18%;
+	}
+
+	/*portfolio fix*/
+	.gallery img {
+		min-height: auto;
+	}
+
+	/*sidebar button fix*/
+	.widget button {
+		font-size: .875em;
+	}
+
+	/*Contact info fix*/
+	#contact small {
+		display: block;
+	}
+
+	#contact .col-sm-4 {
+		border: none;
+	}
+
+	#contact .social i {
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+}
+
+
+/*=== MOBILE
+=============================================================*/
+@media screen and ( max-width: 767px ) {
+
+	/*main nav fix*/
+	#navbar .navbar-brand {
+		width: 60%;
+		margin-right: 0;
+		padding: 10px 0;
+	}
+
+	#navbar .navbar-brand img {
+		width: 100%;
+	}
+
+	.navbar button {
+		margin: 30px;
+	}
+
+	.navbar .navbar-collapse {
+		margin: 0;
+		border: none;
+	}
+
+	.navbar #nav-links {
+		justify-content: center;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.85);
+		margin: 0;
+		/*padding: 10px 0;*/
+		font-size: .875em;
+		display: block;
+		height: auto !important;
+	}
+
+	.navbar #nav-links li {
+		border-bottom: 1px solid #777;
+		padding: 5px 0
+	}
+
+	.navbar #nav-links li:nth-of-type(5) {
+		border-bottom: none;
+	}
+
+	.alt-page #nav-links li.active a {
+		background-color: rgba(0,0,0,0); 
+	}
+
+	/*about me social icon fix*/
+	#about .social i {
+		margin-right: 5px;
+	}
+
+	/*more info fix*/
+	#moreinfo .col-sm-6 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	/*footer fix*/
+	footer {
+		text-align: center;
+	}
+
+	footer .container .list-inline li {
+		display: block ;
+	}
+
+	/*contact page fix*/
+	#contact {
+		padding-left: 10px; 
+		padding-right: 10px;
+	}
+	#contact .col-sm-4 {
+		margin-bottom: 40px;
+	}
+
+	#contact .social i {
+		margin-right: 5px;
+	}
+}
