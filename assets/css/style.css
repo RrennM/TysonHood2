@@ -6,8 +6,8 @@
 }
 
 body {
-	font-family: 'Vollkorn', serif;
-	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-size: 20px;*/
 }
 
 
@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	font-family: 'Vollkorn', serif;
 }
 
 h1 {
@@ -79,6 +80,11 @@ blockquote cite {
 	background-color: #1F3C53;
 }
 
+#primary {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .alt-page #hero {
 	min-height: 400px;
 	background-size: cover;
@@ -100,6 +106,7 @@ blockquote cite {
 
 .alt-page #nav-links {
 	height: 80px;
+	font-family: 'Vollkorn', serif;
 }
 
 .alt-page #nav-links li {
@@ -178,6 +185,9 @@ blockquote cite {
 
 /* === HOME PAGE
 =============================================================*/
+#homepage {
+	font-size: 16px;
+}
 
 /* === HEADER
 =============================================================*/
@@ -202,6 +212,7 @@ header {
 	border: none;
 	height: 150px;
 	width: 100%;
+	font-family: 'Vollkorn', serif;
 
   /* animation magic */
   position: fixed;
@@ -360,6 +371,7 @@ footer {
 	background: rgba(0, 0, 0, 0.9);
 	font-size: 1em;
 	height: auto;
+	font-family: 'Vollkorn', serif;
 }
 
 footer,
@@ -476,6 +488,159 @@ footer a:hover {
 
 
 
+/* === BLOG PAGE
+=============================================================*/
+#blog-page, #post-page {
+	font-size: 16px;
+	background: #eee;
+}
+
+.post, .widget, #comments {
+	background-color: #fff;
+	margin: 0 0 40px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body,
+#comments #comments-wrap {
+	padding: 20px;
+}
+
+.post header {
+	color: #222;
+	margin: 0;
+	font-size: .75em;
+}
+
+.post time {
+	color: #5F794F;
+	font-weight: 700;
+	font-size: 1.125em;
+}
+
+.post h2,
+#comments h3 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+.post a:hover {
+	text-decoration: none;
+}
+
+.post i.fa {
+	margin-left: 10px;
+}
+
+.post i.fa:first-child {
+	margin-left: 0;
+}
+
+.post img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.post .post-excerpt h4 {
+	color: #888;
+	font-size: .875em;
+}
+
+
+/* === POST_PAGE
+=============================================================*/
+
+#post-page .post-content h3,
+#post-page .post-content h4,
+#post-page #comments h3,
+#post-page #comments h4 {
+	font-weight: 700;
+}
+
+
+
+
+/* === WIDGETS
+=============================================================*/
+.widget {
+	padding: 20px;
+}
+
+.widget h3 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+}
+
+.widget input {
+	width: 100%;
+}
+
+.widget ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.widget ul li {
+	padding: 0 0 5px;
+}
+
+.widget ul li a:hover{
+	position: relative;
+	padding-left: 1px;
+	text-decoration: none;
+}
+
+
+
+/* === COMMENTS
+=============================================================*/
+#comments h3 {
+	text-align: center;
+}
+
+.comments-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment {
+	background-color: rgba(0, 0, 0, 0.03);
+	list-style: none;
+	padding: 10px 20px;
+	border: 1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.comments-list-child {
+	list-style: none;
+	padding: 0;
+}
+
+#comments form label,
+#comments form input,
+#comments form textarea {
+	display: block;
+	width: 100%;
+}
+
+#comments input[type="submit"] {
+	width: 30%;
+	margin: 0 auto;
+}
+
+
+
+
 /* === CONTACT PAGE
 =============================================================*/
 #contact {
@@ -505,3 +670,62 @@ footer a:hover {
 }
 
 
+
+
+
+
+/* === FORMS
+=============================================================*/
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #aaa;
+} 
